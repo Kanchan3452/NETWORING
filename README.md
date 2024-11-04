@@ -20,3 +20,6 @@ With VLAN, you can create multiple interfaces on top of a single one and filter 
 
 Before MACVLAN, if you wanted to connect to physical network from a VM or namespace, you would have needed to create TAP/VETH devices and attach one side to a bridge and attach a physical interface to the bridge on the host at the same time,.
 
+## IPVLAN
+IPVLAN is similar to MACVLAN with the difference being that the endpoints have the same MAC address.
+
