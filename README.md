@@ -65,6 +65,13 @@ NETWORKING IN CLOUD--
 
 ![image](https://github.com/user-attachments/assets/48904026-ee26-427b-b2e9-4e3e97051baa)
 
+## CNI (Container Network Interface)
+A CNI plugin is responsible for inserting a network interface into the container network namespace (e.g., one end of a virtual ethernet (veth) pair) and making any necessary changes on the host(e.g., attaching the other end of the veth into a bridge). CNI is used by container runtimes, such as Kubernetes, as well as Podman, CRI-O, Mesos, and others.
+
+
+## Flannel
+Flannel is a simple and easy way to configure a layer 3 network fabric designed for Kubernetes.Flannel runs a small, single binary agent called flanneld on each host, and is responsible for allocating a subnet lease to each host out of a larger, preconfigured address space. Flannel uses either the Kubernetes API or etcd directly to store the network configuration, the allocated subnets. Packets are forwarded using one of several backend mechanisms including VXLAN and various cloud integrations.
+
 
 **Networking in the cloud is a critical aspect of cloud computing that enables communication between various resources, services, and applications hosted in cloud environments. Here are some key concepts and components involved in cloud networking:**
 
